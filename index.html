@@ -4,60 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruno Raimundo | Portefólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #2d6cdf;
+      --background: #f9f9f9;
+      --text: #333;
+      --card-bg: #ffffff;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
-      color: #212529;
+      background-color: var(--background);
+      color: var(--text);
     }
+
     header {
-      background-color: #ffffff;
-      padding: 2rem;
+      background-color: white;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 4rem 1rem 2rem;
     }
+
     header img {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 1rem;
+      border: 4px solid var(--primary);
     }
+
     h1 {
-      margin: 0;
+      margin-top: 1rem;
+      font-size: 2rem;
     }
-    .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1rem;
     }
-    .section {
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
       margin-bottom: 3rem;
     }
-    .projects .project {
-      background-color: #fff;
-      border: 1px solid #dee2e6;
-      padding: 1rem;
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
       margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
+
     .btn {
       display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: #007bff;
+      background-color: var(--primary);
       color: white;
-      text-decoration: none;
+      padding: 0.6rem 1.2rem;
       border-radius: 5px;
-      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: 600;
     }
+
+    .projects {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .project {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
     footer {
-      text-align: center;
-      padding: 2rem;
       background-color: #f1f3f5;
-      color: #6c757d;
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -65,40 +111,42 @@
   <header>
     <img src="foto.jpg" alt="Bruno Raimundo">
     <h1>Bruno Raimundo</h1>
-    <p>Engenheiro Mecânico | Analista de Dados</p>
+    <p class="subtitle">Engenheiro Mecânico | Analista de Dados</p>
   </header>
 
-  <div class="content">
-    <section class="section about">
-      <h2>Sobre mim</h2>
+  <div class="container">
+    <section>
+      <h2>Sobre Mim</h2>
       <p>
         Sou engenheiro mecânico com experiência em indústria, logística e análise de dados. Atualmente trabalho na implementação de sistemas MES e estou a expandir as minhas competências em Data Science e Business Analytics.
       </p>
-      <a href="cv_bruno_raimundo.pdf" class="btn" download>Download CV</a>
+      <a href="CV_Bruno_Raimundo%20%5BENG%5D.pdf" class="btn" download>Download CV</a>
     </section>
 
-    <section class="section projects">
+    <section>
       <h2>Projetos</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Business Intelligence - Telecom Dataset</h3>
+          <p>Projeto com análise de dados de clientes empresariais. Identificação de segmentos de maior valor e sugestão de campanhas de fidelização.</p>
+          <a href="https://github.com/brunoraimundo93/BI-Telecom" target="_blank">Ver no GitHub</a>
+        </div>
 
-      <div class="project">
-        <h3>Business Intelligence - Telecom Dataset</h3>
-        <p>Projeto com análise de dados de clientes empresariais. Identificação de segmentos de maior valor e sugestão de campanhas de fidelização.</p>
-        <a href="https://github.com/brunoraimundo93/BI-Telecom" target="_blank">Ver no GitHub</a>
+        <div class="project">
+          <h3>Modelação de Processo de Estampagem</h3>
+          <p>Dissertação de Mestrado: simulação numérica do processo de estampagem multi-etapa de um pedal de travão.</p>
+          <a href="https://github.com/brunoraimundo93/MSc-BrakePedalStamping" target="_blank">Ver no GitHub</a>
+        </div>
       </div>
-
-      <div class="project">
-        <h3>Modelação de Processo de Estampagem</h3>
-        <p>Dissertação de Mestrado: simulação numérica do processo de estampagem multi-etapa de um pedal de travão.</p>
-        <a href="https://github.com/brunoraimundo93/MSc-BrakePedalStamping" target="_blank">Ver no GitHub</a>
-      </div>
-
     </section>
 
-    <section class="section contact">
+    <section>
       <h2>Contactos</h2>
-      <p>Email: <a href="mailto:bruno.rib.raimundo@gmail.com">bruno.rib.raimundo@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/brunoraimundo" target="_blank">linkedin.com/in/brunoraimundo</a></p>
-      <p>Telemóvel: +351 926 943 018</p>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:bruno.rib.raimundo@gmail.com">bruno.rib.raimundo@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://pt.linkedin.com/in/brunoraimundo" target="_blank">pt.linkedin.com/in/brunoraimundo</a></p>
+        <p>Telemóvel: +351 926 943 018</p>
+      </div>
     </section>
   </div>
 
@@ -107,3 +155,4 @@
   </footer>
 </body>
 </html>
+
