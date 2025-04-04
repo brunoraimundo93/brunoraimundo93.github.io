@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruno Raimundo | Portefólio</title>
+  <title>Bruno Raimundo | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -37,8 +37,8 @@
     }
 
     aside img {
-      width: 160px;
-      height: 160px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid var(--primary);
@@ -68,6 +68,19 @@
       margin: 1rem 0;
     }
 
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
     .contact-info {
       margin-top: auto;
       text-align: center;
@@ -76,6 +89,7 @@
 
     .contact-info p {
       margin: 0.4rem 0;
+      color: black;
     }
 
     main {
@@ -129,8 +143,8 @@
       }
 
       aside img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         margin: 0;
       }
 
@@ -144,54 +158,58 @@
   <aside>
     <img src="foto.png" alt="Bruno Raimundo" />
     <h1>Bruno Raimundo</h1>
-    <p class="subtitle">Engenheiro Mecânico | Analista de Dados</p>
-    <a href="CV_Bruno_Raimundo%20%5BENG%5D.pdf" class="btn" download>Download CV</a>
+    <p class="subtitle">Mechanical Engineer | Data Analyst</p>
+    <a href="Resume_Bruno_Raimundo%20%5BENG%5D.pdf" class="btn" download>Resume</a>
+    <div class="social-links">
+      <a href="https://pt.linkedin.com/in/brunoraimundo" target="_blank">LinkedIn</a>
+      <a href="https://github.com/brunoraimundo93" target="_blank">GitHub</a>
+    </div>
     <div class="contact-info">
       <p><a href="mailto:bruno.rib.raimundo@gmail.com">bruno.rib.raimundo@gmail.com</a></p>
-      <p><a href="https://pt.linkedin.com/in/brunoraimundo" target="_blank">LinkedIn</a></p>
       <p>+351 926 943 018</p>
     </div>
   </aside>
   <main>
     <section class="sobre-mim">
-      <h2>Sobre Mim</h2>
+      <h2>About Me</h2>
       <p>
-        Hello, I’m Bruno Raimundo, a Process Manager with 5+ years of experience in process optimization, business analysis, and data-driven solutions. Currently, I’m working at Grupo Lusiaves, implementing Manufacturing Execution Systems (MES) to improve operational efficiency. I’m passionate about transforming business requirements into actionable solutions that drive productivity and growth.
+        I’m driven by the challenge of improving business operations and using data to unlock efficiency and foster growth. My passion lies in solving complex problems and collaborating with cross-functional teams to develop data-driven solutions that enhance performance and support decision-making.
       </p>
       <p>
-        I’ve successfully reduced logistics downtime by 66% at Gestamp Vendas Novas through the automation of internal supply chains. At Embraer Portugal, I supported production lines with technical documentation and industrialization processes to meet customer specifications. These experiences have sharpened my skills in business process mapping, requirements gathering, and implementing data-driven solutions.
+        Throughout my career, I have gained valuable experience in process optimization, business analysis, and system implementation. In my current role at Grupo Lusiaves, I am focusing on implementing Manufacturing Execution Systems (MES) to improve operational efficiency and streamline production processes.
       </p>
       <p>
-        I’m driven by the challenge of optimizing business processes and using data to unlock efficiency and growth. I enjoy solving complex problems and collaborating with cross-functional teams to create solutions that improve performance and support decision-making.
+        I have a proven track record of optimizing internal processes: I reduced logistics downtime by 66% at Gestamp Vendas Novas by automating supply chains. At Embraer Portugal, I supported production lines with technical documentation and industrialization processes to meet customer specifications. These experiences have strengthened my skills in process mapping, requirement gathering, and implementing data-driven solutions.
+      </p>
+      <p>
+        I am passionate about leveraging data and technology to solve business problems, enhance efficiency, and drive innovation. I thrive in dynamic environments where I can collaborate with teams to create impactful solutions.
       </p>
       <p>
         <strong>Core Competencies and Technological Skills:</strong><br>
-        Process Optimization, Requirements Gathering, Business Analysis, Digital Transformation, Microsoft Excel, BI Tools (Power BI), SQL, Python, Reporting and Dashboards, Communication Skills, Problem-Solving.
+        Process Optimization, Business Analysis, Requirements Gathering, Digital Transformation, Microsoft Excel, Power BI, SQL, Python, Reporting, Dashboards, Communication Skills, Problem-Solving.
       </p>
       <p>
-        Let’s connect and explore how my expertise in business analysis, process optimization, and data analysis can support your business goals. Feel free to reach out!
+        Let’s connect and explore how my experience in process optimization, business analysis, and data analytics can contribute to your business goals. Feel free to reach out!
       </p>
     </section>
     <section>
-      <h2>Projetos</h2>
+      <h2>Projects</h2>
       <div class="projects">
         <div class="project">
           <h3>Business Intelligence - Telecom Dataset</h3>
-          <p>Projeto com análise de dados de clientes empresariais. Identificação de segmentos de maior valor e sugestão de campanhas de fidelização.</p>
-          <a href="https://github.com/brunoraimundo93/BI-Telecom" target="_blank">Ver no GitHub</a>
+          <p>Project involving analysis of business client data. Identification of high-value segments and suggestions for loyalty campaigns.</p>
+          <a href="https://github.com/brunoraimundo93/BI-Telecom" target="_blank">View on GitHub</a>
         </div>
         <div class="project">
-          <h3>Modelação de Processo de Estampagem</h3>
-          <p>Dissertação de Mestrado: simulação numérica do processo de estampagem multi-etapa de um pedal de travão.</p>
-          <a href="https://github.com/brunoraimundo93/MSc-BrakePedalStamping" target="_blank">Ver no GitHub</a>
+          <h3>Stamping Process Modeling</h3>
+          <p>Master's thesis: numerical simulation of the multi-step stamping process of a brake pedal.</p>
+          <a href="https://github.com/brunoraimundo93/MSc-BrakePedalStamping" target="_blank">View on GitHub</a>
         </div>
       </div>
     </section>
     <footer>
-      &copy; 2025 Bruno Raimundo. Todos os direitos reservados.
+      &copy; 2025 Bruno Raimundo. All rights reserved.
     </footer>
   </main>
 </body>
 </html>
-
-
