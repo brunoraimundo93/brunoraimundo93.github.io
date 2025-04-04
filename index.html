@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bruno Raimundo | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --primary: #2d6cdf;
@@ -19,7 +18,7 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', sans-serif; /* Fonte Inter aplicada */
       margin: 0;
       background-color: var(--background);
       color: var(--text);
@@ -67,9 +66,6 @@
       text-decoration: none;
       font-weight: 600;
       margin: 1rem 0;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
     }
 
     .social-links {
@@ -83,9 +79,6 @@
       color: inherit;
       text-decoration: none;
       font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
     }
 
     .contact-info {
@@ -103,6 +96,8 @@
       padding: 2rem;
       display: flex;
       flex-direction: column;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     section {
@@ -118,15 +113,18 @@
 
     .projects {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Usando colunas automáticas */
+      gap: 2rem; /* Aumentando o espaçamento entre os projetos */
     }
 
     .project {
       background-color: var(--card-bg);
-      padding: 1rem;
+      padding: 1.5rem; /* Aumentando o preenchimento dos cards */
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     footer {
@@ -146,7 +144,6 @@
         flex-direction: row;
         justify-content: space-around;
         text-align: left;
-        flex-wrap: wrap;
       }
 
       aside img {
@@ -156,7 +153,8 @@
       }
 
       .projects {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Em telas pequenas, os projetos serão uma coluna */
+        gap: 1.5rem;
       }
     }
   </style>
@@ -166,33 +164,30 @@
     <img src="foto.png" alt="Bruno Raimundo" />
     <h1>Bruno Raimundo</h1>
     <p class="subtitle">Mechanical Engineer | Data Analyst</p>
-    <a href="Resume_Bruno_Raimundo%20%5BENG%5D.pdf" class="btn" download><i class="fas fa-file-arrow-down"></i> Resume</a>
-
-    <section class="about-me">
-      <h2 style="font-size: 1.1rem; color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.3rem;">
-        <i class="fas fa-user"></i> About Me
-      </h2>
-      <p style="font-size: 0.9rem; text-align: justify;">
-        I’m driven by the challenge of improving business operations and using data to unlock efficiency and foster growth. My passion lies in solving complex problems and collaborating with cross-functional teams to develop data-driven solutions that enhance performance and support decision-making.
-      </p>
-      <p style="font-size: 0.9rem; text-align: justify;">
-        <strong><i class="fas fa-cogs"></i> Core Competencies:</strong><br>
-        Process Optimization, Business Analysis, Requirements Gathering, Digital Transformation, Excel, Power BI, SQL, Python, Dashboards, Reporting, Communication, Problem-Solving.
-      </p>
-    </section>
-
+    <a href="Resume_Bruno_Raimundo%20%5BENG%5D.pdf" class="btn" download>Resume</a>
     <div class="social-links">
-      <a href="https://pt.linkedin.com/in/brunoraimundo" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/brunoraimundo93" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://pt.linkedin.com/in/brunoraimundo" target="_blank">LinkedIn</a>
+      <a href="https://github.com/brunoraimundo93" target="_blank">GitHub</a>
     </div>
-
     <div class="contact-info">
-      <p><i class="fas fa-envelope"></i> <a href="mailto:bruno.rib.raimundo@gmail.com">bruno.rib.raimundo@gmail.com</a></p>
-      <p><i class="fas fa-phone"></i> +351 926 943 018</p>
+      <p><a href="mailto:bruno.rib.raimundo@gmail.com">bruno.rib.raimundo@gmail.com</a></p>
+      <p>+351 926 943 018</p>
     </div>
   </aside>
-
   <main>
+    <section class="sobre-mim">
+      <h2>About Me</h2>
+      <p>
+        I’m driven by the challenge of improving business operations and using data to unlock efficiency and foster growth. My passion lies in solving complex problems and collaborating with cross-functional teams to develop data-driven solutions that enhance performance and support decision-making.
+      </p>
+      <p>
+        <strong>Core Competencies and Technological Skills:</strong><br>
+        Process Optimization, Business Analysis, Requirements Gathering, Digital Transformation, Microsoft Excel, Power BI, SQL, Python, Reporting, Dashboards, Communication Skills, Problem-Solving.
+      </p>
+      <p>
+        Let’s connect and explore how my experience in process optimization, business analysis, and data analytics can contribute to your business goals. Feel free to reach out!
+      </p>
+    </section>
     <section>
       <h2>Projects</h2>
       <div class="projects">
@@ -210,4 +205,3 @@ The model achieves an F1-score of 75.8% after applying data preprocessing, featu
   </main>
 </body>
 </html>
-
