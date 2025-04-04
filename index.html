@@ -27,7 +27,7 @@
     }
 
     aside {
-      width: 280px;
+      width: 300px;
       background-color: white;
       padding: 2rem;
       box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
@@ -81,6 +81,8 @@
     main {
       flex: 1;
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
     }
 
     section {
@@ -92,6 +94,10 @@
       border-bottom: 2px solid var(--primary);
       display: inline-block;
       margin-bottom: 1rem;
+    }
+
+    .sobre-mim {
+      order: -1;
     }
 
     .projects {
@@ -111,7 +117,7 @@
       text-align: center;
       font-size: 0.9rem;
       color: #888;
-      margin-top: 4rem;
+      margin-top: auto;
     }
 
     @media (max-width: 768px) {
@@ -140,7 +146,7 @@
 </head>
 <body>
   <aside>
-    <img src="foto.jpg" alt="Bruno Raimundo" />
+    <img src="foto.png" alt="Bruno Raimundo" />
     <h1>Bruno Raimundo</h1>
     <p class="subtitle">Engenheiro Mecânico | Analista de Dados</p>
     <a href="CV_Bruno_Raimundo%20%5BENG%5D.pdf" class="btn" download>Download CV</a>
@@ -151,7 +157,7 @@
     </div>
   </aside>
   <main>
-    <section>
+    <section class="sobre-mim">
       <h2>Sobre Mim</h2>
       <p>
         Sou engenheiro mecânico com experiência em indústria, logística e análise de dados. Atualmente trabalho na implementação de sistemas MES e estou a expandir as minhas competências em Data Science e Business Analytics.
