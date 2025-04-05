@@ -8,6 +8,6 @@
 The CNN model is trained using data augmentation along with regularization techniques, resulting in an accuracy of 86% for unseen music samples. 
 
 [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/ML_Approaches_Near_Expiration_%20Products.html)
-
+[![Download Power BI](https://img.shields.io/badge/PowerBI-Download_.pbix-yellow?logo=powerbi)](https://github.com/brunoraimundo93/brunoraimundo93.github.io/blob/main/projects/Near%20to%20Expiration%20Program_Dashboard.pbix?raw=true)
 ---
 <center>© 2025 Bruno Raimundo. Powered by Jekyll and the Minimal Theme.</center>
