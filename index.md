@@ -1,10 +1,9 @@
 # Portfolio
 ---
-## Deep Learning
 
-### Music Genres Recognition using Neural Networks
+## Machine Learning Approaches for Near-Expiration Products
 
-A Convolutional Neural Network (CNN) is employed to model a music genre classification task using the GTZAN dataset, comprising 100 music samples of 30 seconds each for 10 different music genres. 
+ A Random Forest Classifier is used to predict the likelihood of sale for near-expiration products. The model is trained on 150k+ records and reaches a 75.8% F1-score. A Power BI dashboard visualizes key sales insights and clustering helps segment stores for targeted strategies.
 
 The CNN model is trained using data augmentation along with regularization techniques, resulting in an accuracy of 86% for unseen music samples. 
 
@@ -15,4 +14,4 @@ The CNN model is trained using data augmentation along with regularization techn
 <center><img src="images/Genre Recognition Project Banner.png"/></center>
 
 ---
-<center>© 2023 David Issá. Powered by Jekyll and the Minimal Theme.</center>
+<center>© 2025 Bruno Raimundo. Powered by Jekyll and the Minimal Theme.</center>
