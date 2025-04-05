@@ -8,8 +8,6 @@
 The CNN model is trained using data augmentation along with regularization techniques, resulting in an accuracy of 86% for unseen music samples. 
 
 [![Open Notebook](https://img.shields.io/badge/Jupyter-Open_Notebook-blue?logo=Jupyter)](projects/ML_Approaches_Near_Expiration_%20Products.html)
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-blue?logo=GitHub)](https://github.com/davidissa99/Music-Genre-Recognition)
-
 
 ---
 <center>© 2025 Bruno Raimundo. Powered by Jekyll and the Minimal Theme.</center>
