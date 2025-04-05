@@ -6,7 +6,8 @@ description:
   <p align="center">
   <a href="pdf/CV_Bruno_Raimundo [ENG].pdf">Resume</a> |
   <a href="https://www.linkedin.com/in/brunoraimundo/">LinkedIn</a> |
-  <a href="https://github.com/brunoraimundo93">GitHub</a>
+  <a href="https://github.com/brunoraimundo93">GitHub</a> |
+  <a href="mailto:bruno.rib.raimundo@gmail.com">Email</a>
   </p>
   
   <p align="justify">
@@ -18,3 +19,4 @@ description:
   
 theme: jekyll-theme-minimal
 google_analytics: G-PSW1MY7HB4 # Google Analytics tracking ID
+
