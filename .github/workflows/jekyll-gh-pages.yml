@@ -1,0 +1,22 @@
+title: <p align="center"> Bruno Raimundo </p>
+
+logo: "/images/Fotografia.png?raw=true"
+
+description:
+  <p align="center">
+  <a href="pdf/CV_Bruno_Raimundo [ENG].pdf">Resume</a> |
+  <a href="https://www.linkedin.com/in/brunoraimundo/">LinkedIn</a> |
+  <a href="https://github.com/brunoraimundo93">GitHub</a>
+  </p>
+  
+  <p align="justify">
+   I’m driven by the challenge of improving business operations and using data to unlock efficiency and foster growth. I enjoy solving complex problems and developing data-driven solutions that enhance performance and support decision-making.
+
+  <br><br>
+   I’m driven by the challenge of improving business operations and using data to unlock efficiency and foster growth. I enjoy solving complex problems and developing data-driven solutions that enhance performance and support decision-making.
+
+  <br><br>
+  </p>
+  
+theme: jekyll-theme-minimal
+google_analytics: G-PSW1MY7HB4 # Google Analytics tracking ID
